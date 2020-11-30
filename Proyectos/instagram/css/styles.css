@@ -7,7 +7,6 @@ body {
     cursor: pointer;
     position: relative;
     display: block;
-    width: 200px;
 }
 
 .post-image {
@@ -44,4 +43,17 @@ body {
     font-weight: bold;
     text-align: center;
     display: inline-block;
+}
+
+.post-list {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(100px, 293px)); 
+   justify-content: center;
+   gap: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+    .post-list {
+        gap: 3px;
+    }
 }
