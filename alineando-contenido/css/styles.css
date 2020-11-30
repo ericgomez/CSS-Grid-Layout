@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  /* gap: filas columnas; */
+  gap: 5px;
+  height: 100vh;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 100px);
+
+  /* justify-content align-content: start end center stretch space-around space-between space-evenly; */
+  justify-content: center;/*Alinear todo el contenido de izquierda a derecha*/
+  /* justify-content align-content: start end center stretch space-around space-between space-evenly; */
+  align-content: space-between;/*Alinear todo el contenido de ariba a abajo*/
+}
+
+.item {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.item:nth-of-type(5) {
+  /*align-self: start;/*Alinear solo un elemento de izquierda a derecha*/
+  /*justify-self: start;/*Alinear solo un elemento de ariba a abajo*/
+}
